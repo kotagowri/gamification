@@ -9,7 +9,6 @@ function App() {
     <BrowserRouter>
     <Routes>
      <Route path="/gam" element={<Game/>}/> 
-     
     </Routes>
     </BrowserRouter>
 </>
