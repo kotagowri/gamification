@@ -37,7 +37,7 @@
   }
 }
 .main{
-  background-color: #61dafb;
+  background-color:#61dafb;
   content: "";
   clear: both;
   /* display: table; */
@@ -45,10 +45,15 @@
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
+   
 }
 .sd{
  
-  float: right;
-  width: 25%;
-  padding: 20px;
+  float: left;
+  width: 15%;
+  padding: 5px;
+ 
+}
+.text{
+  text-shadow  : 3px 3px whitesmoke;
 }
