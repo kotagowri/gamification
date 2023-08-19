@@ -9,6 +9,7 @@ function App() {
     <BrowserRouter>
     <Routes>
      <Route path="/" element={<Game/>}/> 
+     
     </Routes>
     </BrowserRouter>
 </>

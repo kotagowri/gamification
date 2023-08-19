@@ -12,7 +12,9 @@ export const Game=()=>
         <img src="ludo.jpg"width={250}height={250}></img><br/>
        <a href="https://poki.com/en/g/ludo-multiplayer">
         <button className="button" >START</button></a><br/>
-        
+        <img src="word.jpg"width={250}height={250}></img><br/>
+       <a href="https://poki.com/en/g/words-search-classic-edition">
+        <button className="button" >START</button></a><br/>
         </>
     )
 }
