@@ -37,10 +37,14 @@
   }
 }
 .main{
-  
+  background-color: #61dafb;
   content: "";
   clear: both;
-  display: table;
+  /* display: table; */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
 }
 .sd{
  
