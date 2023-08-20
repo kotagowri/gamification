@@ -57,3 +57,6 @@
 .text{
   text-shadow  : 3px 3px whitesmoke;
 }
+img{
+  border-radius: 13px;
+}
