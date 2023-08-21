@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {BrowserRouter,Route,Routes,Link} from 'react-router-dom';
-import './App.css';
+
 export const Game=()=>
 {
     const[count,setCount]=useState(0);
