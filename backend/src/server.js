@@ -7,6 +7,7 @@ app.use(cors());
 app.get('/',(req,res)=>{
     res.send("server is running")
 })
+
 connectToDB(()=>{
     app.listen(6000,()=>{
         console.log("Server is running at 6000");
