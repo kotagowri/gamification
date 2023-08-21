@@ -1,5 +1,6 @@
 
 import './App.css';
+import Dicee from './dicee';
 import { Game } from './proj';
 import {BrowserRouter,Route,Routes} from'react-router-dom';
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <BrowserRouter>
     <Routes>
      <Route path="/" element={<Game/>}/> 
+     <Route path="/games/dicee" element={<Dicee/>}/>
     </Routes>
     </BrowserRouter>
   </>
