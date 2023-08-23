@@ -3,7 +3,6 @@ import axios from 'axios';
 export const Game=()=>
 {
     let gamepoints=0;
-    const nav=useNavigate();
     const[count,setCount]=useState('');
     const[email,setEmail]=useState([]);
     const Increment=async()=>{
