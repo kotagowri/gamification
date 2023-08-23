@@ -3,7 +3,7 @@ import axios from 'axios';
 export const Game=()=>
 {
     let gamepoints=0;
-    const[count,setCount]=useState('');
+    const[count,setCount]=useState(0);
     const[email,setEmail]=useState([]);
     const Increment=async()=>{
     try{
@@ -11,7 +11,7 @@ export const Game=()=>
         
             if(res.data){
                 gamepoints=parseInt(res.data.Gamepoints)+1;
-                const res1=await axios.post('http://localhost:8000/update/'+email+"/"+gamepoints)
+                const res1=await axios.post('http://localhost:8000/update/'+email+"/"+Number(gamepoints))
                 
                     if(res1.data){
                         setCount(gamepoints);
