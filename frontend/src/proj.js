@@ -1,5 +1,4 @@
 import React, { useState  } from "react";
-import {useNavigate} from 'react-router-dom';
 import axios from 'axios';
 export const Game=()=>
 {
@@ -26,7 +25,7 @@ export const Game=()=>
             }
             else
             {
-                nav('/');
+               // nav('/');
                 // alert('cant find')
             }
         
