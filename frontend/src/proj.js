@@ -1,11 +1,29 @@
 import React, { useEffect, useState } from "react";
 import {BrowserRouter,Route,Routes,Link} from 'react-router-dom';
+import axios from "axios";
+
 
 export const Game=()=>
 {
     const[count,setCount]=useState(0);
-    const Increment=()=>{
+    const[gamepoints,setGamepoints]=useState([]);
+    const[email,setEmail]=useState([]);
+    const Increment=async()=>{
         setCount(count+1);
+        // gamepoints="gain";
+        setGamepoints("gain");
+        try{
+        const res=await axios.post('http://localhost:6000/game/'+email+"/"+gamepoints)
+        {
+            if(res.data.email){
+               alert("saved") ;
+            }
+        }
+    }
+    catch(e){
+        
+    }
+      
     }
     useEffect(()=>{
         console.log("UseEffecting called");
@@ -18,6 +36,10 @@ export const Game=()=>
            <h1>WELCOME</h1>
         </div> 
         <h2 className="h2"> game points: {count} </h2> 
+        <div>
+            <input type="email" onChange={(e)=>setEmail(e.target.value)}></input>
+            <button onClick={Increment}>enter</button>
+        </div>
         <marquee><h3>click on the image to play game😊 </h3></marquee><br/>
         {/* {count} */}
             <div className="sd">
@@ -39,6 +61,7 @@ export const Game=()=>
        <a href="/games/dicee">
        <img src="dice.png"width={150}height={150}></img><br/></a><br/></div>
         </div>
+
         </>
     )
 }
