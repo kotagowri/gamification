@@ -47,6 +47,34 @@
   background-size: cover;
    
 }
+@media only screen and (max-width:480px){
+  .main{
+    background-color:#61dafb;
+    content: "";
+    clear: both;
+    /* display: table; */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+     
+  }
+}
+@media only screen and (max-width:768px){
+  .main{
+    background-color:#61dafb;
+    content: "";
+    clear: both;
+    /* display: table; */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+     
+  }
+}
+
+
 .sd{
  
   float: left;

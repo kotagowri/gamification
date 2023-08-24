@@ -17,7 +17,7 @@ export const Game=()=>
            <div className="text">
            <h1>WELCOME</h1>
         </div> 
-        <h2 className="h2"> game points: {count} </h2> 
+        <h2 className="h2"> game points:{ count} </h2> 
         <marquee><h3>click on the image to play game😊 </h3></marquee><br/>
         {/* {count} */}
             <div className="sd">
