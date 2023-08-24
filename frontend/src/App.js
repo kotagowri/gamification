@@ -3,7 +3,7 @@ import './App.css';
 import Dicee from './dicee';
 import { Game } from './proj';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import SearchBar2 from './rohini';
+// import SearchBar2 from './rohini';
 function App() {
   return (
    <>
@@ -11,7 +11,7 @@ function App() {
     <Routes>
      <Route path="/" element={<Game/>}/> 
      <Route path="/games/dicee" element={<Dicee/>}/>
-     <Route path="/search" element={<SearchBar2/>}/>
+     {/* <Route path="/search" element={<SearchBar2/>}/> */}
     </Routes>
     </BrowserRouter>
 </>
